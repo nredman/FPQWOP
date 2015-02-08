@@ -8,9 +8,9 @@ public class UpperLegScript : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		Lift (Time.deltaTime);
-	}
+	//void Update () {
+	//	Lift (Time.deltaTime);
+	//}
 
 	void Lift(float amount){
 		Debug.Log (amount);
