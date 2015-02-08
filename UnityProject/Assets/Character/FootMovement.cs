@@ -33,7 +33,7 @@ public class FootMovement : MonoBehaviour {
 		Vector3 targetVector = new Vector3 ();
 		targetVector.x = mov.x;
 		targetVector.y = 0;
-		targetVector.z = mov.y;
+		targetVector.z = -mov.y;
 		targetVector = transform.rotation * targetVector;
 		rigidbody.AddForce (targetVector);
 	}
