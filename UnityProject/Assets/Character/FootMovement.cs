@@ -23,7 +23,7 @@ public class FootMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(BIFC.getIsKeyDown() == true){
-			Move(BIFC.getMouseMovements());
+			Move(BIFC.getMouseMovements()*10);
 		}
 	}
 
@@ -32,6 +32,7 @@ public class FootMovement : MonoBehaviour {
 		targetVector.x = mov.x;
 		targetVector.y = 0;
 		targetVector.z = mov.y;
+		targetVector = transform.rotation * targetVector;
 		rigidbody.AddForce (targetVector);
 	}
 }
