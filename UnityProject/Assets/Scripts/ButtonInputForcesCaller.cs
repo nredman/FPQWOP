@@ -7,6 +7,7 @@ public class ButtonInputForcesCaller : MonoBehaviour {
 
 	private bool isKeyDown = false;
 	private bool isA = false;
+	private bool isD = false;
 
 	private float mouseX;
 	private float mouseY;
@@ -15,16 +16,7 @@ public class ButtonInputForcesCaller : MonoBehaviour {
 	private float mouseWheelMovements;
 
 	void FixedUpdate(){
-
-		//Determines if you are controling left or right side
-		if(Input.GetKey(KeyCode.A)){
-			isA = true;
-		} 
-		else if(Input.GetKey(KeyCode.D)){
-			isA = false;
-			//Debug.Log("setting isA");
-		}
-
+	
 		//Make a Vector2 of the mouse movement
 		mouseX = Input.GetAxis("Mouse X");
 		mouseY = Input.GetAxis("Mouse Y");
@@ -36,7 +28,21 @@ public class ButtonInputForcesCaller : MonoBehaviour {
 
 	//Call this to determine if we're working with the left or right leg
 	public bool getLeftTrue(){
+		if(Input.GetKey(KeyCode.A)){
+			isA = true;
+		} else {
+			isA = false;
+		}
 		return isA;
+	}
+
+	public bool getRightTrue(){
+		if(Input.GetKey(KeyCode.D)){
+			isD = true;
+		} else {
+			isD = false;
+		}
+		return isD;
 	}
 
 	public bool getIsKeyDown(){
