@@ -6,7 +6,7 @@ public class ButtonInputForcesCaller : MonoBehaviour {
 	//NEIL: you edit speed inside your function
 
 	private bool isKeyDown = false;
-	private bool left = false;
+	private bool isA = false;
 
 	private float mouseX;
 	private float mouseY;
@@ -18,12 +18,11 @@ public class ButtonInputForcesCaller : MonoBehaviour {
 
 		//Determines if you are controling left or right side
 		if(Input.GetKey(KeyCode.A)){
-			left = true;
-			isKeyDown = true;
+			isA = true;
 		} 
 		else if(Input.GetKey(KeyCode.D)){
-			left = false;
-			isKeyDown = true;
+			isA = false;
+			//Debug.Log("setting isA");
 		}
 
 		//Make a Vector2 of the mouse movement
@@ -37,10 +36,15 @@ public class ButtonInputForcesCaller : MonoBehaviour {
 
 	//Call this to determine if we're working with the left or right leg
 	public bool getLeftTrue(){
-		return left;
+		return isA;
 	}
 
 	public bool getIsKeyDown(){
+		if(Input.GetKey(KeyCode.A) || Input.GetKey (KeyCode.D)){
+			isKeyDown = true;
+		} else {
+			isKeyDown = false;
+		}
 		return isKeyDown;
 	}
 

@@ -5,17 +5,13 @@ public class FootMovement : MonoBehaviour {
 
 	public GameObject inputScriptLocation;
 	ButtonInputForcesCaller BIFC;
+	public bool isLeft = false;
+	public float moveSpeed = 10;
 	// Use this for initialization
 	void Start () {
-		bool leftOrRight = false;
-
-		//ButtonInputForcesCaller otherScript = GetComponent<ButtonInputForcesCaller>();
 
 		GameObject otherObject = GameObject.Find("Torso");
 		ButtonInputForcesCaller otherScript = otherObject.GetComponent<ButtonInputForcesCaller>();
-		leftOrRight = otherScript.getLeftTrue();
-		Debug.Log(leftOrRight);
-
 		BIFC = otherScript;
 
 	}
@@ -23,7 +19,14 @@ public class FootMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(BIFC.getIsKeyDown() == true){
-			Move(BIFC.getMouseMovements()*10);
+			//case where is the left foot and the left key is down
+			if(isLeft && BIFC.getLeftTrue()){
+				Move(BIFC.getMouseMovements() * moveSpeed);
+			}
+			//case where is not left foot and is the right key down
+			else if(!isLeft && !BIFC.getLeftTrue()){
+				Move(BIFC.getMouseMovements() * moveSpeed);
+			}
 		}
 	}
 

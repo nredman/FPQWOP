@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Character\FootMovement.cs" />
+     <Compile Include="Assets\Character\HingeScript.cs" />
      <Compile Include="Assets\Character\UpperLegScript.cs" />
      <Compile Include="Assets\Scripts\ButtonInputForcesCaller.cs" />
      <Compile Include="Assets\Scripts\ChangeScene.cs" />
