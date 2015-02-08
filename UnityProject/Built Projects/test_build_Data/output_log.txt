@@ -1,0 +1,30 @@
+Initialize engine version: 4.6.2f1 (bd99309c2ad7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 460 (ID=0xe22)
+    Vendor:   NVIDIA
+    VRAM:     722 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Callum\Unity\FPQWOP_Local_Testing\UnityProject\Built Projects\test_build_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Callum\Unity\FPQWOP_Local_Testing\UnityProject\Built Projects\test_build_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Callum\Unity\FPQWOP_Local_Testing\UnityProject\Built Projects\test_build_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Callum\Unity\FPQWOP_Local_Testing\UnityProject\Built Projects\test_build_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Callum\Unity\FPQWOP_Local_Testing\UnityProject\Built Projects\test_build_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Callum\Unity\FPQWOP_Local_Testing\UnityProject\Built Projects\test_build_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Callum\Unity\FPQWOP_Local_Testing\UnityProject\Built Projects\test_build_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\Callum\Unity\FPQWOP_Local_Testing\UnityProject\Built Projects\test_build_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Callum\Unity\FPQWOP_Local_Testing\UnityProject\Built Projects\test_build_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Callum\Unity\FPQWOP_Local_Testing\UnityProject\Built Projects\test_build_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.214 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: C:\Users\Callum\Unity\FPQWOP_Local_Testing\UnityProject\Built Projects\test_build_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Callum\Unity\FPQWOP_Local_Testing\UnityProject\Built Projects\test_build_Data\Managed\System.dll (this message is harmless)
+UnloadTime: 3.840353 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 221.
+Total: 1.309301 ms (FindLiveObjects: 0.021557 ms CreateObjectMapping: 0.019797 ms MarkObjects: 0.225256 ms  DeleteObjects: 0.007039 ms)
+
