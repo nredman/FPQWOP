@@ -25,10 +25,9 @@ public class HingeScript : MonoBehaviour {
 	}
 
 	void Tense() {
-		if (tensed) {
+		if (!tensed) {
 			JointSpring tempSpring = GetComponent<HingeJoint> ().spring;
-			tempSpring.targetPosition = transform.localRotation.eulerAngles.x - attachedTransform.localRotation.eulerAngles.x;
-			Debug.Log (tempSpring.targetPosition.ToString ());
+			tempSpring.targetPosition = GetComponent<HingeJoint>().angle;
 			GetComponent<HingeJoint> ().spring = tempSpring;
 			GetComponent<HingeJoint> ().useSpring = true;
 			tensed = true;
