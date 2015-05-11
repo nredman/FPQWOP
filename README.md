@@ -6,4 +6,4 @@ Made in 48 hours
 Scripts made by me are stored here:
 https://github.com/nredman/FPQWOP/tree/master/UnityProject/Assets/Scripts
 
-Also check for a working demo
+Also check for a working demo: https://github.com/nredman/FPQWOP/tree/master/UnityProject/Built%20Projects
